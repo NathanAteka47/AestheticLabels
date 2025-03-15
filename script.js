@@ -16,3 +16,13 @@ function calculateProfit() {
     let profit = revenue - expenses;
     document.getElementById("profit").innerText = `KES ${profit}`;
 }
+
+// Button Click Alert
+document.addEventListener("DOMContentLoaded", () => {
+    let shopNowButton = document.querySelector(".btn");
+    if (shopNowButton) {
+        shopNowButton.addEventListener("click", () => {
+            alert("Welcome to Aesthetic Labels! Start Shopping Now.");
+        });
+    }
+});
